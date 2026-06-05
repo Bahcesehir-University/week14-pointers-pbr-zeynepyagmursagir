@@ -218,4 +218,6 @@ void normalizeTemperature(double& celsius) {
 //   if value > high -> value = high
 void clampToRange(int& value, int low, int high) {
     // TODO 4.2: clamp value into [low, high]
+    if(value >high) value=high;
+    if(value<low) value=low;
 }
